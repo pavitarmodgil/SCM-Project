@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Brain-Box</title>
+   <link rel="icon" type="png" href="images/logonew.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <img class="logo" onclick="window.location.href='home.html'" src="images/logo.png" alt="Website Logo" >
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Search Courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fa fa-moon"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Guest</h3>
+         <p class="role">Student</p>
+             <a href="profile.html" class="btn">Profile</a>
+             <a href="login.html" class="btn">Log-Out</a>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+   <h3 class="plat">&nbsp;&nbsp;&nbsp;&nbsp;Brain-Box: </h3>
+   <h1 class="plat2">&nbsp;E-Learning Platform</h1>
+
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <div class="text-container">
+         <h3 class="name">Guest</h3>
+         <p class="role">Student</p>
+         <a href="profile.html" class="btn">Profile</a>
+      </div>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+      <a href="history.html"><i class="fas fa-clock"></i><span>History</span></a>
+      <a href="library.html"><i class="fas fa-book"></i><span>Library</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="home-grid">
+
+   <h1 class="heading">quick options</h1>
+
+   <div class="box-container"> 
+
+      <div class="box" id="last-watched-box">
+         <h3 class="title">Continue from where you left:</h3>
+         <div id="last-watched-content">
+            <p>You haven't watched any videos yet.</p>
+         </div>
+      </div>
+
+      
+
+      <div class="box">
+         <h3 class="title">top categories</h3>
+         <div class="flex">
+            <a href="#"><i class="fas fa-code"></i><span>Development</span></a>
+            <a href="#"><i class="fas fa-chart-simple"></i><span>Business</span></a>
+            <a href="#"><i class="fas fa-pen"></i><span>Design</span></a>
+            <a href="#"><i class="fas fa-chart-line"></i><span>Marketing</span></a>
+            <a href="#"><i class="fas fa-music"></i><span>Music</span></a>
+            <a href="#"><i class="fas fa-camera"></i><span>Photography</span></a>
+            <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
+            <a href="#"><i class="fas fa-vial"></i><span>Science</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">popular topics</h3>
+         <div class="flex">
+            <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
+            <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
+            <a href="#"><i class="fab fa-js"></i><span>Javascript</span></a>
+            <a href="#"><i class="fab fa-react"></i><span>React</span></a>
+            <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
+            <a href="#"><i class="fab fa-bootstrap"></i><span>BootStrap</span></a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+<section class="courses">
+
+   <h1 class="heading">some famous playlists</h1>
+
+   <div class="box-container">
+
+      <div class="box" data-category="python coding">
+         <div class="tutor">
+            <img src="images/cwh.jpg" alt="">
+            <div class="info">
+               <h3>CodeWithHarry</h3>
+               <span>Nov 28, 2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumbnail.jpg" alt="">
+            <span>100 videos</span>
+         </div>
+         <h3 class="title">Python for Beginners (Full Course) | #100DaysOfCode</h3>
+         <a href="playlist2.html" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box" data-category="css coding" >
+         <div class="tutor">
+            <img src="images/pic-3.jpg" alt="">
+            <div class="info">
+               <h3>freeCodeCamp.org</h3>
+               <span>Aug 30, 2022</span>
+            </div>
+         </div>
+         <div class="thumb" >
+            <img src="images/thumb-2.jpg" alt="">
+            <span>One-Shot</span>
+         </div>
+         <h3 class="title">CSS Tutorial – Full Course for Beginners</h3>
+         <a href="playlist.html" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box" data-category="html coding">
+         <div class="tutor">
+            <img src="images/pic-2 (2).jpg" alt="">
+            <div class="info">
+               <h3>Apna College</h3>
+               <span>Mar 22, 2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-1.jpg" alt="">
+            <span>Single Video</span>
+         </div>
+         <h3 class="title">HTML Tutorial for Beginners | Complete HTML with Notes & Code</h3>
+         <a href="playlist.html" class="inline-btn">view playlist</a>
+      </div>
+      <div class="box" data-category="class:8th">
+         <div class="tutor">
+            <img src="images/cwh.jpg" alt="">
+            <div class="info">
+               <h3>physics wallah</h3>
+               <span>jan,10  2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumbnail.jpg" alt="">
+            <span>18 videos</span>
+         </div>
+         <h3 class="title">science- class 8th NCERT</h3>
+         <a href="playlist2.html" class="inline-btn">view playlist</a>
+      </div>
+
+
+      <div class="box" data-category="class:9th chemistry science">
+         <div class="tutor">
+            <img src="images/cwh.jpg" alt="">
+            <div class="info">
+               <h3>magnet brains</h3>
+               <span>nov,19  2020</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumbnail.jpg" alt="">
+            <span>18 videos</span>
+         </div>
+         <h3 class="title">science- class 9th NCERT</h3>
+         <a href="playlist2.html" class="inline-btn">view playlist</a>
+      </div>
+
+
+      <div class="box" data-category="class:9th physics science">
+         <div class="tutor">
+            <img src="images/cwh.jpg" alt="">
+            <div class="info">
+               <h3>magnet brains</h3>
+               <span>nov,19  2020</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumbnail.jpg" alt="">
+            <span>18 videos</span>
+         </div>
+         <h3 class="title">science- class 9th NCERT</h3>
+         <a href="playlist2.html" class="inline-btn">view playlist</a>
+      </div>
+
+   </div>
+
+   <div class="more-btn">
+      <a href="courses.html" class="inline-btn">view all courses</a>
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2024 by <span>Brain-Box</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js" defer></script>
+<script src="js/APP.JS" defer></script>
+   
+</body>
+</html>

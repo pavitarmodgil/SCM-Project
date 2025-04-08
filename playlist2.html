@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>video playlist</title>
+   <link rel="icon" type="png" href="images/logonew.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <img class="logo" onclick="window.location.href='home.html'" src="images/logo.png" alt="Website Logo" >
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Search Courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-moon"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Player111</h3>
+         <p class="role">Student</p>
+             <a href="profile.html" class="btn">Profile</a>
+             <a href="login.html" class="btn">Log-Out</a>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+   <h3 class="plat">&nbsp;&nbsp;&nbsp;&nbsp;Brain-Box: </h3>
+   <h1 class="plat2">&nbsp;E-Learning Platform</h1>
+
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <div class="text-container">
+         <h3 class="name">Guest</h3>
+         <p class="role">Student</p>
+         <a href="profile.html" class="btn">Profile</a>
+      </div>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+      <a href="history.html"><i class="fas fa-clock"></i><span>History</span></a>
+      <a href="library.html"><i class="fas fa-book"></i><span>Library</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact us</span></a>
+   </nav>
+
+</div>
+
+<section class="playlist-details">
+
+   <h1 class="heading">playlist details</h1>
+
+   <div class="row">
+
+      <div class="column">
+         <form action="" method="post" class="save-playlist">
+            <button type="submit"><i class="far fa-bookmark"></i></button>
+            <a href="watch-video.html"><button type="button"><i class="fa-regular fa-circle-play"></i></button></a>
+         </form>
+   
+         <div class="thumb">
+            <img src="images/thumbnail.jpg" alt="">
+            <!-- <span>10 videos</span> -->
+         </div>
+      </div>
+      <div class="column">
+         <div class="tutor">
+            <img src="images/cwh.jpg" alt="">
+            <div>
+                <h3>CodeWithHarry</h3>
+                <span>Nov 28, 2022</span>
+            </div>
+         </div>
+   
+         <div class="details">
+            <h3>Python for Beginners (Full Course) | #100DaysOfCode </h3>
+            <p>Python is one of the most demanded programming languages in the job market. Surprisingly, it is equally easy to learn and master Python. This python tutorial for absolute beginners in Hindi series will
+            focus on teaching you python concepts from the ground up, to an advanced level. With this 100-day challenge now and you will be able to get a job easily. This 100-day series is for all those.......</p>
+            <a href="teacher_profile.html" class="inline-btn">view profile</a>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<section class="playlist-videos">
+
+   <h1 class="heading">playlist videos</h1>
+
+   <div class="box-container">
+
+      <a class="box" href="watch-video.html?videoUrl=https://www.youtube.com/embed/7wnove7K-ZQ&title=Introduction%20to%20Programming%20%26%20Python">
+         <i class="fas fa-play"></i>
+         <img src="images/post-1-1.png" alt="">
+         <h3 class="titlevid">Introduction to Programming & Python</h3>
+      </a>
+      
+
+      <a class="box" href="watch-video.html?videoUrl=https%3A%2F%2Fwww.youtube.com%2Fembed%2FTto8TS-fJQU&title=Some%20Amazing%20Python%20Programs%20-%20The%20Power%20of%20Python">
+         <i class="fas fa-play"></i>
+         <img src="images/post-1-2.png" alt="">
+         <h3 class="titlevid">Some Amazing Python Programs - The Power of Python</h3>
+      </a>
+
+      <a class="box" href="watch-video.html?videoUrl=https%3A%2F%2Fwww.youtube.com%2Fembed%2FxwKO_y2gHxQ&title=Modules%20and%20Pip">
+         <i class="fas fa-play"></i>
+         <img src="images/post-1-3.png" alt="">
+         <h3 class="titlevid">Modules and Pip</h3>
+      </a>
+
+      <a class="box" href="watch-video.html?videoUrl=https%3A%2F%2Fwww.youtube.com%2Fembed%2F7IWOYhfAcVg&title=Our%20First%20Python%20Program">
+         <i class="fas fa-play"></i>
+         <img src="images/post-1-4.png" alt="">
+         <h3 class="titlevid">Our First Python Program</h3>
+      </a>
+
+      <a class="box" href="watch-video.html?videoUrl=https%3A%2F%2Fwww.youtube.com%2Fembed%2FqxPMmW93eDs&title=Comments%2C%20Escape%20Sequences%20%26%20Print%20Statement">
+         <i class="fas fa-play"></i>
+         <img src="images/post-1-5.png" alt="">
+         <h3 class="titlevid">Comments, Escape Sequences & Print Statement</h3>
+      </a>
+
+      <a class="box" href="watch-video.html?videoUrl=https%3A%2F%2Fwww.youtube.com%2Fembed%2FORCuz7s5cCY&title=Variables%20and%20Data%20Types">
+         <i class="fas fa-play"></i>
+         <img src="images/post-1-6.png" alt="">
+         <h3 class="titlevid">Variables and Data Types</h3>
+      </a>
+
+      <div class="more-btn">
+         <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" class="inline-btn">Watch All Videos</a>
+      </div>
+
+   </div>
+
+</section>
+
+<footer class="footer">
+
+   &copy; copyright @ 2024 by <span>Brain-Box</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/APP.JS" defer></script>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
